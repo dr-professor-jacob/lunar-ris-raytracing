@@ -1,0 +1,14 @@
+<scene version="3.0.0">
+    <default name="spp" value="256"/>
+
+    <bsdf type="twosided" id="mat-itu_concrete">
+        <bsdf type="diffuse">
+            <rgb name="reflectance" value="0.5, 0.5, 0.5"/>
+        </bsdf>
+    </bsdf>
+
+    <shape type="obj" id="shackleton_crater">
+        <string name="filename" value="nasa_shackleton_dem.obj"/>
+        <ref id="mat-itu_concrete" name="bsdf"/>
+    </shape>
+</scene>

@@ -1,0 +1,19 @@
+# 1. Ignore everything in the root by default
+/*
+
+# 2. Whitelist the exact files we want in the root
+!/README.md
+!/sionna_malapert_sim.py
+!/.gitignore
+
+# 3. Whitelist specific directories we need to enter
+!/models/
+!/results/
+
+# 4. Inside the results directory, ignore everything except dashboard.html
+/results/*
+!/results/dashboard.html
+
+# 5. Inside the models directory, keep everything (the terrain mesh and XML are required for the code to run)
+!/models/*
+!/models/**/*
